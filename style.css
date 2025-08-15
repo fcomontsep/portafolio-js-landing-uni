@@ -6,7 +6,10 @@
 .header {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+	background-image: linear-gradient(
+			rgba(4, 30, 25, 0.6),
+			rgba(4, 30, 25, 0.8)
+		),
 		url(img/banner.jpg);
 	background-position: center;
 	background-size: cover;
@@ -62,7 +65,7 @@ nav img {
 }
 .text-box p {
 	margin: 10px 0 40px;
-	font-size: 14px;
+	font-size: 16px;
 }
 .hero-btn {
 	display: inline-block;
@@ -110,5 +113,201 @@ nav .fa {
 	}
 	.nav-links ul {
 		padding: 30px;
+	}
+}
+
+/* ---- CARRERAS ----*/
+
+.carreras {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.carreras h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+.carreras p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.carreras-col {
+	flex-basis: 31%;
+	background: #c3ffe9;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.carreras-col:hover {
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.25);
+}
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
+
+/* ---- ACTIVIDADES ----*/
+
+.actividades {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.actividades-col {
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.actividades img {
+	width: 100%;
+	display: block;
+}
+.layer {
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer h3 {
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.layer:hover {
+	background: rgba(0, 156, 99, 0.75);
+}
+.layer:hover h3 {
+	bottom: 25%;
+	opacity: 1;
+}
+
+/* ---- CAMPUS ----*/
+
+.campus {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.campus-col {
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.campus-col img {
+	width: 100%;
+	border-radius: 10px;
+}
+.campus-col p {
+	padding: 0;
+	text-align: justify;
+}
+.campus-col h3 {
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+/* ---- DECIR ----*/
+
+.decir {
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+.decir-col {
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
+	text-align: left;
+	background: #c3ffe9;
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
+}
+.decir-col img {
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+.decir-col p {
+	padding: 0;
+}
+.decir-col h3 {
+	margin-top: 15px;
+	text-align: left;
+}
+.decir-col .fa {
+	color: #00ab6b;
+}
+
+@media (max-width: 700px) {
+	.decir-col img {
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+}
+
+/* ---- CONTACTO ----*/
+
+.contacto {
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(
+			rgba(4, 30, 25, 0.6),
+			rgba(4, 30, 25, 0.8)
+		),
+		url(img/banner-2.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.contacto h1 {
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+@media (max-width: 700px) {
+	.contacto h1 {
+		font-size: 18px;
 	}
 }
