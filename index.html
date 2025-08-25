@@ -22,14 +22,38 @@
 
 		<section id="header" class="header">
 			<nav>
-				<a href="index.html"><img src="img/logo.png" /></a>
+				<a href=""><img src="img/logo.png" /></a>
 				<div class="nav-links" id="navLinks">
 					<i class="fa fa-times" onclick="hideMenu()"></i>
 					<ul>
-						<li><a href="#header">INICIO</a></li>
-						<li><a href="#carreras">CARRERAS</a></li>
-						<li><a href="#actividades">DETALLE</a></li>
-						<li><a href="#contacto">CONTACTO</a></li>
+						<li>
+							<a
+								href="#header"
+								onclick="desplazaPagina(event, 'header')"
+								>INICIO</a
+							>
+						</li>
+						<li>
+							<a
+								href="#carreras"
+								onclick="desplazaPagina(event, 'carreras')"
+								>CARRERAS</a
+							>
+						</li>
+						<li>
+							<a
+								href="#actividades"
+								onclick="desplazaPagina(event, 'actividades')"
+								>DETALLE</a
+							>
+						</li>
+						<li>
+							<a
+								href="#contacto"
+								onclick="desplazaPagina(event, 'contacto')"
+								>CONTACTO</a
+							>
+						</li>
 					</ul>
 				</div>
 				<i class="fa fa-bars" onclick="showMenu()"></i>
@@ -280,6 +304,14 @@
 			}
 			function hideMenu() {
 				navLinks.style.right = "-200px";
+			}
+
+			function desplazaPagina(event, id) {
+				event.preventDefault();
+				const section = document.getElementById(id);
+				if (section) {
+					section.scrollIntoView({ behavior: "smooth" });
+				}
 			}
 		</script>
 	</body>
