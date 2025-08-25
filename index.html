@@ -297,22 +297,7 @@
 
 		<!-- JavaScript -->
 
-		<script>
-			var navLinks = document.getElementById("navLinks");
-			function showMenu() {
-				navLinks.style.right = "0";
-			}
-			function hideMenu() {
-				navLinks.style.right = "-200px";
-			}
-
-			function desplazaPagina(event, id) {
-				event.preventDefault();
-				const section = document.getElementById(id);
-				if (section) {
-					section.scrollIntoView({ behavior: "smooth" });
-				}
-			}
-		</script>
+		<script src="js/menu-mostrar.js"></script>
+		<script src="js/desplazar.js"></script>
 	</body>
 </html>
